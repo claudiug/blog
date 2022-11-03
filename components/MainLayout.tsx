@@ -1,11 +1,14 @@
 import { Head } from "$fresh/runtime.ts";
 import { ComponentChildren } from "preact";
+import { Header } from "../components/Header.tsx";
+import { Footer } from "../components/Footer.tsx";
 interface Props {
   children: ComponentChildren;
 }
 const MainLayout = ({ children }: Props) => {
   return (
     <>
+      <html data-theme="acid" />
       <Head>
         {/* DaisyUI  */}
         <link
@@ -21,7 +24,9 @@ const MainLayout = ({ children }: Props) => {
       </Head>
       <div class="container mx-auto">
         <main>
+          <Header />
           {children}
+          <Footer />
         </main>
       </div>
     </>

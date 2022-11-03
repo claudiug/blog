@@ -7,7 +7,6 @@ const Index = () => {
         <p class="border border-red-500 ">
           Hello, today is: {new Date().toDateString()}
         </p>
-        <button class="btn">Button</button>
       </>
     </MainLayout>
   );
