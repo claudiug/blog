@@ -1,8 +1,15 @@
+import { MainLayout } from "../components/MainLayout.tsx";
+
 const Index = () => {
   return (
-    <>
-      <p class="text-indigo-400">Hello {new Date().toDateString()}</p>
-    </>
+    <MainLayout>
+      <>
+        <p class="border border-red-500 ">
+          Hello, today is: {new Date().toDateString()}
+        </p>
+        <button class="btn">Button</button>
+      </>
+    </MainLayout>
   );
 };
 
